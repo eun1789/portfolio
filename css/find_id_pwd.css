@@ -1,0 +1,66 @@
+/*----------pc--------------------------------*/
+@media screen and (min-width:600px){
+/*-------------------------tab-------------------------------*/
+
+
+#tab_btn input:nth-of-type(1){display: none;}
+#tab_btn input:nth-of-type(2){display: none;}
+#tab_btn a {color: white;  width: 350px; height: 40px; text-align: center; line-height:40px; background-color: gray; float: left;}
+
+#tab_btn input:checked + a{ background-color: black;}
+
+/*-------------------------------find_id_pwd---------------------------*/
+#find_id_pwd { width: 700px; height: 500px;  margin: 80px auto 60px auto;  background-color:white; border: 1px solid #f2f2f2;}
+
+/*-------------------------------phon/email tab----------------------------------*/
+#check_info > #e_mail:checked ~ #phone_info{display: none;}
+#check_info > #e_mail:checked ~ #email_info{display:block;}
+#check_info > #phone:checked ~ #email_info{display: none;}
+#check_info > #phone:checked ~ #phone_info{display:block;}
+
+/*----------------------------------check------------------------------------------*/
+#check_info{width: 500px; height: 300px; margin:10px auto; box-sizing: border-box; padding: 100px 50px;  }
+#check_info #e_mail + #phone{ border: 1px solid #555;}
+#check_info label{display: inline-block; width: 50px; height:30px; line-height: 30px;}
+.info_box{ width: 300px; height: 30px; margin: 10px 0;}
+.phone_box { width: 89px; height: 30px; }
+#sub{ width: 170px; height: 40px; margin: 30px 5px; background-color: black; border: none; color: white; cursor: pointer;}
+#reset{ width: 170px; height: 40px; margin: 30px 5px; background-color: black; border: none; color: white; cursor: pointer;}
+
+.email_box{width: 138px; height: 30px;}
+}
+
+
+@media screen and (max-width:599px){
+    /*-------------------------tab-------------------------------*/
+    
+    
+    #tab_btn input:nth-of-type(1){display: none;}
+    #tab_btn input:nth-of-type(2){display: none;}
+    #tab_btn a {color: white;  width: 350px; height: 40px; text-align: center; line-height:40px; background-color: gray; float: left;}
+    
+    #tab_btn input:checked + a{ background-color: black;}
+    
+    /*-------------------------------find_id_pwd---------------------------*/
+    #find_id_pwd { width: 350px; height: 500px;  margin: 10px auto; background-color:white; border: 1px solid #f2f2f2;}
+    
+    /*-------------------------------phon/email tab----------------------------------*/
+    #check_info > #e_mail:checked ~ #phone_info{display: none;}
+    #check_info > #e_mail:checked ~ #email_info{display:block;}
+    #check_info > #phone:checked ~ #email_info{display: none;}
+    #check_info > #phone:checked ~ #phone_info{display:block;}
+    
+    /*----------------------------------check------------------------------------------*/
+    #email_info{width:350px; height: 150px;}
+    #phone_info{width:350px; height: 150px;}
+    #check_info{width: 350px; height: 300px; margin:auto; box-sizing: border-box; padding:10px; background-color: white;  }
+    #check_info #e_mail + #phone{ border: 1px solid #555;}
+    #check_info label{display: inline-block; width: 50px; height:30px; line-height: 30px;}
+    .info_box{ width: 250px; height: 30px; margin: 10px 0;}
+    .phone_box { width: 73px; height: 30px; margin: 10px 0; }
+    input.email_box{ width: 113px; height: 30px;}
+    #sub{ width: 150px; height: 40px; margin: 10px 5px; background-color: black; border: none; color: white; cursor: pointer;}
+    #reset{ width: 150px; height: 40px; margin: 30px 5px; background-color: black; border: none; color: white; cursor: pointer;}
+    
+    .email_box{width: 100px; height: 30px;}
+    }

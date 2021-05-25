@@ -1,0 +1,14 @@
+@media screen and (min-width:600px){
+    #wrap{ width: 100%; overflow: hidden;}
+    .eventBn{ width: 1000px; height: 1000px; margin:100px auto;}
+    .bn { width: 300px; overflow: hidden; text-align: center;}
+    p{font-size: 14px;}
+}
+@media screen and (max-width:599px){
+    #wrap{ width: 500px; margin: auto;}
+    .eventBn{ width:100%; height: 500px; margin:50px auto;}
+    .bn { width: 300px; overflow: hidden; text-align: center;}
+    .bn img { width: 200px;}
+    p{font-size: 14px;}
+
+}

@@ -1,0 +1,6 @@
+ #noticeTable{ border-collapse: collapse;}
+#tdSubject { width: 700px; }
+#tdNumber{width:100px;}
+#tdDate{ width: 200px;}
+#tdContent{ height: 1000px; margin: 100px 0; }
+.button{ margin-top: 10px; text-align: center;}

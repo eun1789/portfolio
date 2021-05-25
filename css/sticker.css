@@ -1,0 +1,9 @@
+@media screen and (min-width:600px){
+    #prep{ width: 500px; height: 500px; padding:250px 100px; box-sizing: border-box; margin:50px auto;}
+    #prep h3 {text-align: center; }
+}
+@media screen and (max-width:599px){
+    #prep{ width: 500px; height: 500px; padding:250px 100px; box-sizing: border-box; margin: auto;}
+    #prep h3 {text-align: center;}
+
+}

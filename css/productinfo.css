@@ -1,0 +1,46 @@
+/*-----pc버전--------*/
+@media screen and (min-width:600px){
+    
+    #wrap{ width: 100%; overflow: hidden;}
+    #prodInfo { width: 1100px; height: 500px; margin: 100px auto;}
+    #prodImg{ width: 500px; height: 500px; background-color: yellow; float: left; margin: 0 100px 0 0;}
+    #prodImg img { width: 500px; height: 500px;}
+    #prodTable{ width: 500px; height:500px; font-family:sans-serif; }
+    #prodTable th{ width: 200px; text-align: left; }
+    #line{ border-bottom: 1px solid black;}
+    .btn{ width: 140px; height: 50px; margin: 10px; border: none; cursor: pointer;}
+    #buy{ background-color: black; color: white;}
+    #Ea{ width: 50px; height: 30px;}
+
+    h3{ width: 1000px; margin:  0 auto;}
+    table.customerBord{ width:1000px; height:20px; margin:10px auto 50px auto; font-family:sans-serif; border: 1px solid black; border-collapse: collapse;}
+    table.customerBord th {font-weight: normal; text-align: center; border: 1px solid black;}
+    th.no{width: 60px;}
+    th.subject{width: 540px;}
+    th.userName{width:100px;}
+    th.date{width:100px;}
+    th.gradeMark{width:200px; }
+    table.customerBord td {font-weight: normal; text-align: center; border:1px solid black}
+    table.customerBord td:nth-of-type(2){ float: left; border: none; margin-left: 10px;}
+    table.customerMobileBord{display: none;}
+}
+/*모바일 버전*/
+@media screen and (max-width:599px){
+    #wrap{ width: 100%; overflow: hidden;}
+    #prodInfo { width: 400px; height: 900px; margin: 50px auto;}
+    #prodImg{ width: 400px; height:400px; background-color: yellow; float: left; margin: 0 100px 0 0;}
+    #prodImg img { width: 400px; height: 400px;}
+    #prodTable{ width: 400px; height:500px; font-family:sans-serif; }
+    #prodTable th{ width: 200px; text-align: left; }
+    #line{ border-bottom: 1px solid black;}
+    .btn{ width: 120px; height: 50px; margin: 3px; border: none; cursor: pointer;}
+    #buy{ background-color: black; color: white;}
+    #Ea{ width: 50px; height: 30px;}
+
+    h3{ width: 1000px; margin:20px 25px;}
+    table.customerBord{ display: none;}
+    table.customerMobileBord{ width:440px; height:auto; margin:0 auto 50px auto; }
+    table.customerMobileBord td {font-weight: normal; text-align: left;}
+    .bordBottom{font-size: 4px;padding: 6px 0;  border-bottom: 1px solid black;}
+    .bordTop{height: 50px; border-top: 1px solid black;}
+}
