@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/noticeView.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id=" wrap">
+        <table id="noticeTable" border="1">
+            <tr>
+                <th>글번호</th>
+                <td id="tdNumber">${notice.nseq}</td>
+
+                <th width="50">제목</th>
+                <td id="tdSubject">${notice.subject}</td>
+            
+                <th>등록일</th>
+                <td id="tdDate"><fmt:formatDate value="${notice.indate}" type="date" /></td>
+            </tr>
+            <tr>
+                <td id="tdContent" colspan="6"></td>
+            </tr>
+        </table>
+        <div class="button">
+            <input type="submit" value="수정하기">
+            <input type="button" value="삭제하기"  onclick="location.href='hanyu?type=noticeDelete&nseq=${notice.nseq}'">
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="./js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/register.js"></script>
+    
+</head>
+<body>
+     
+    <div id="wrap">
+        
+        <!---------헤더------------>
+
+            <header>
+                <!---------모바일메뉴------------>
+                <div id="mobileMenu">
+                    <div id="menuClose">
+                        <img src="./img/close.png">
+                    </div>
+                    <div id="mobileGnb">
+                        <ul>
+                            <li><a href="./login.html">Login</a></li>
+                            <li><a href="./agree.html">Join</a></li>
+                            <li><a href="./cart.html">Cart</a></li>
+                            <li><a href="./about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><a href="./all.html">All</a></li>
+                        <li><a href="./fabric.html">fabric</a></li>
+                        <li><a href="./acc.html">acc</a></li>
+                        <li><a href="./sticker.html">sticker</a></li>
+                        <li><a href="./etc.html">etc</a></li>
+                        <li><a href="./notice.html">notice</a></li>
+                        <li><a href="./QnA.html">QnA</a></li>
+                        <li><a href="./event.html">Event</a></li>
+                    </ul>
+                </div>
+            <!---------/모바일메뉴------------>
+                <div id="gnb">
+                    <ul>
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./agree.html">Join</a></li>
+                        <li><a href="./cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div id="menuBtn"></div>
+                <div id="sns"><a href="https://www.instagram.com/hanyu1789/"><img src="./img/insta.jpg"></a></div>
+                <!------로고------->
+                <a href="./index.html"><h1></h1></a>
+                <!-----/로고------->
+
+            </header>
+        <!---------/헤더------------>
+        
+        <!---------메뉴------------>
+        <nav>
+            <ul>
+                <li><a href="./about.html">ABOUT US</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">BORD</a></li>
+                <li><a href="./event.html">EVENT</a></li>
+    
+            </ul>
+
+            <div id="sub_menu">
+                <div id="subMenuwrap">  
+                    <ul>
+                        <li><a href="./all.html">all</a></li>
+                        <li><a href="./fabric.html">fabric</a></li>
+                        <li><a href="acc.html">acc</a></li>
+                        <li><a href="./sticker.html">sticker</a></li>
+                        <li><a href="./etc.html">etc</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./notice.html">notice</a></li>
+                        <li><a href="./QnA.html">QnA</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+        <!---------/메뉴------------>
+        <!---------정보입력------------>
+        <div id="regiSter">
+            <h2>회원가입</h2>
+            <form name="ugreeForm" onsubmit="return false;">
+                <table border="1px" align="center">
+                    <tr>
+                        <th>아이디 입력</th>
+                        <td><input id="userId" class="userinfo"type="text"> <input type="button" name="idBtn" value="중복확인" onclick="checkName();"></td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td><input id="passWord" name="passWord" class="userinfo" type="password"></td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호확인</th>
+                        <td><input id="passWordCheck" name="passWord" class="userinfo" type="password"></td>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td><input id="userName" name="userName" class="userinfo" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>주소</th>
+                        <td>
+                            <input id="address" class="adress" type="text"><br>
+
+                            <input id="address" class="adress" type="text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>일반전화</th>
+                        <td><input class="phone" type="text">
+                    </tr>
+
+                    <tr>
+                        <th>휴대전화</th>
+                        <td><input id="userPhone" class="phone" type="text" pattern="[0-9]{11}"></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td><input id="userEmail" class="email" type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>이메일 수신 여부</th>
+                        <td>
+                            &nbsp;수신<input id="okEmail" name="spendEmail" type="radio" checked="checked">
+                            &nbsp;수신하지않음<input name="spendEmail" type="radio">
+                        </td>
+                    </tr>
+                </table>
+                <div class="btn">
+                    <input id="resetBtn" type="reset" value="취소">
+                    <input id="submitBtn" type="submit" onclick="complete()" value="확인">
+                </div>
+            </form>
+        </div>
+        <!---------/정보입력------------>
+        
+        <!---------푸터------------>
+        <footer>
+            
+            <div class="footerTxt">
+                <P>
+                    COMPANY INFO<br>
+                    상호 : 하뉴의 친구들 대표자 : 차은혜 전화 : 010-0000-0000<br>
+                    사업자 등록번호 안내 : [사업자정보확인]<br>
+                    주소 : 경기도 화성시 병점1로<br>
+                    개인정보관리책임자 : 차은혜(eun1789@hanyubear.com)<br>
+                    Copyright ⓒ 2020 Hanyu's Friends Company. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    <!---------/푸터------------>
+    </div>
+    
+</body>
+</html>
