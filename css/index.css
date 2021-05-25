@@ -29,7 +29,7 @@
     .prodImg:nth-child(5){left: 400px; top: 450px; background-image: url(../img/prod5.jpg);}
     .prodImg:nth-child(6){left: 790px; top: 450px; background-image: url(../img/prod6.jpg);}
 
-    .prodImg p{ display: none;  width:100%; height:100%; padding:150px 0; box-sizing: border-box; text-align: center; color: white; background-color:rgba(0,0,0,0.5); position: relative; }
+    .prodImg p{ display: none;  width:100%; height:100%; padding:150px 0; box-sizing: border-box; text-align: center; color: white; position: relative; }
     .prodImg a p::before{content: ""; width: 200px; height: 5px; border-top:1px solid white ; position: absolute; left:90px; top:180px;}
 
     .prodMo{display: none;}
