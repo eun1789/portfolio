@@ -21,7 +21,7 @@
     
     /*상품썸네일*/
     section{width:1180px; height: 840px; margin: 30px auto; position: relative;}
-    section .prodImg{ width: 380px; height: 380px; position: absolute; background-color: indianred;}
+    section .prodImg{ width: 380px; height: 380px; position: absolute; background-color:rgba(0,0,0,0.5);}
     .prodImg:nth-child(1){left: 10px; top: 10px; background-image: url(../img/prod1.jpg);}
     .prodImg:nth-child(2){left: 400px; top: 10px; background-image: url(../img/prod2.jpg);}
     .prodImg:nth-child(3){left: 790px; top: 10px; background-image: url(../img/prod3.jpg);}
